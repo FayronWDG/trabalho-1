@@ -112,7 +112,7 @@ if (id) {
     <div class="row align-items-center">
    
       <div class="col-md-4 position-relative">
-        <img src="${filme.imagem}" class="img-fluid" style="" alt="${filme.titulo}">
+        <img src="${filme.imagem}" class="img-fluid" style="width: 100%; height: 200px; object-fit: fill;" alt="${filme.titulo}">
         <div class="badge bg-info text-white position-absolute bottom-0 start-50 translate-middle-x" style="font-size: 1.2rem; padding: 0.5rem 1rem;">
           ${filme.nota}
         </div>

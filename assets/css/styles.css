@@ -16,13 +16,12 @@ a{
     padding: 2rem;
     background-color: black;
     margin-bottom: .1rem;
+    align-items: center;
 }
 #carouselExampleCaptions .destaque{
     background-color: #53acc2;
     text-align: center;
     font-size: 40px;
-    margin-left: 20rem;
-    margin-right: 20rem;
     border-radius: 2rem;
 }
 /*------------------GRID-------------------*/
