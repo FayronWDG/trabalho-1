@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+a{
+    text-decoration: none;
+     color: inherit;
+}
+
+
+#carouselExampleCaptions {
+    grid-area:carrosel;
+    border-radius:2rem;
+    padding: 2rem;
+    background-color: black;
+    margin-bottom: .1rem;
+}
+#carouselExampleCaptions .destaque{
+    background-color: #53acc2;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    border-radius: 2rem;
+}
+/*------------------GRID-------------------*/
+.container{ 
+    display:grid;
+    background-color: #a9f3f3;    
+    grid-template-columns: 300px 1fr auto;
+    grid-gap:1rem 2rem;
+    grid-template-areas: 
+    "cabeca cabeca cabeca"
+    "carrosel carrosel carrosel"
+    "main main main"
+    "cartao cartao cartao"
+    "rodape rodape rodape";
+}
+
+
+/*----------------cabeçalho----------------*/
+header {
+    grid-area: cabeca;
+    display:flex;
+    background-color: #eeeded;
+    padding: 2rem;
+    text-align: center;
+}
+header img{
+    margin:-1rem;
+    width: 10.4rem;
+    height: 10.4rem;
+}
+header nav h1{
+    color: #007abe;
+    margin-left: 4rem;
+    font-size: 52.5px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+header nav{
+    font-size: 16px;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-top: 100px;
+}
+
+header nav ul li a {
+    background: #007abe;
+    padding: .3rem ;
+    margin: 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 2.2rem;
+}
+header nav ul li a:hover {
+    background: #53acc2;
+    padding: .5rem;
+    margin: .5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 2.2rem;
+}
+/*--------Seção de pesquisa--------*/
+.pesquisa {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.carregar{
+    text-align:end ;
+}
+.pesquisa input {
+    padding: 10px;
+    width: 20rem;
+    margin-left: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pesquisa button {
+    padding: .7rem 2rem;
+    background-color: #007abe;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bol;
+}
+
+.pesquisa button:hover{
+    background-color: #4bcccc;
+}
+/*--------Estilos para o corpo da página-------- */
+main {
+    grid-area: main;
+    padding: 2rem;
+    background-color: #000000;
+    border-radius: 1.4rem;
+    margin: 0.2em;
+}
+
+h2{
+    text-align: center;
+    margin: 2rem 0rem;
+}
+h2 span{
+    display:block;
+    padding:1rem;
+    background: #007abe;
+    border-radius: 1.5rem;
+} 
+h2 button{
+    display:block;
+    padding:1rem;
+    background: #007abe;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border:none;
+} 
+h2 button:hover{
+    padding:1rem;
+    background: #23688d;
+    border-radius: 1.5rem;
+} 
+h2 button a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #333;
+}
+/*-----Cartões de filme-----*/
+
+.cartao{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.filme {
+    background-color: #0291bd;
+    border: 0.1rem solid #2598f7;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 20rem;
+    text-align: center;
+    position: relative;
+}
+article p{
+    font-size: 12px;
+}
+.filme img {
+    width: 100%;
+    border-radius: 1.2rem;
+}
+.nota{
+ border-radius: 1.2rem;
+ padding: 0.5rem;   
+ background-color: rgb(27, 252, 233);
+}
+button{
+    margin-left: 10rem;
+    border-radius: 2rem;
+    color: #333;
+    background-color:rgb(23, 214, 240);
+}
+/*--------------------Rodápe--------------------*/
+footer {
+    display: flex;
+    grid-area:rodape;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    padding-bottom: 0;
+    width: 100%;
+}
+footer img{
+    width: 2rem;
+    border-radius: 2rem;
+}
+
+a{
+    position: relative;
+}
+
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+    background-color: #1a1a1a;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .img-banner {
+    width: 220px;
+    height: 140px;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-content h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    color: #cccccc;
+    margin-bottom: 10px;
+  }
+
+
+
+  filme-titulo{
+    color:blue;
+  }
+/*@media screen and (max-width:640px) {
+  .container{ 
+        display:grid;
+        background-color: #a9f3f3;    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+        grid-gap:2rem 2rem;
+        grid-template-areas: 
+        "cabeca"
+        "main"
+        "cartao"
+        "rodape";
+    }
+    
+    .pesquisa input {
+        padding: 10px;
+        width: 5rem;
+        margin-left: 3rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    header nav h1{
+        color: #007abe;
+        margin-left: 4rem;
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+    }
+    header nav{
+        font-size: 10px;
+    }
+}*/
