@@ -2,134 +2,149 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Filmes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Filmes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
 <body class="container py-3">
-    <header class="d-flex flex-column flex-md-row align-items-center justify-content-between bg-light p-3 rounded">
-        <img src="assets/img/logo-removebg-preview.png" alt="Logo PUC Minas Filmes" class="img-fluid"
-            style="width: 100px; height: auto;">
-        <h1 class="text-primary text-center">PUC Minas Filmes</h1>
-        <nav>
-            <ul class=>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Lançamentos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <p class="destaque">Destaques</p>
-        
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <a href="detalhes.html?id=1">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://fastly.picsum.photos/id/1036/900/600.jpg?hmac=hMRK0WnEuRWCTpJJo_9PODmqQPF1OD6-IwjR48-C2oo" class="carrosel d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+  <header class="d-flex flex-column flex-md-row align-items-center justify-content-between bg-light p-3 rounded">
+    <a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="Logo PUC Minas Filmes" class="img-fluid"
+        style="width: 10rem; height: auto;">
+      <h1 class="text-primary text-center">PUC Minas Filmes
+        <section class="text-center mb-4">
+          <input type="text" class="form-control d-inline-block w-50"
+            placeholder="Pesquise por título, autor, elenco...">
+          <button class="btn btn-primary"><a href="detalhes.html?id=20">Pesquisar</a></button>
+        </section>
+      </h1>
+    </a>
+    <nav>
+      <ul class=>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Lançamentos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <p class="destaque">Destaques </p>
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <a href="detalhes.html?id=1">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://fastly.picsum.photos/id/1036/900/600.jpg?hmac=hMRK0WnEuRWCTpJJo_9PODmqQPF1OD6-IwjR48-C2oo"
+            class="carrosel d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sombras do Amanhã</h5>
+            <p>Thriller Psicológico | Ficção Científica | Mistério</p>
+          </div>
         </div>
     </a>
-          <a href="detalhes.html?id=2">
-          <div class="carousel-item">
-            <img src="https://fastly.picsum.photos/id/431/900/600.jpg?hmac=OvM2RJjFjoZPWuE_pJQ0WpBBj1lSD09C4K7U7M7ollQ" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-        </a>
-        <a href="detalhes.html?id=3">
-          <div class="carousel-item">
-            <img src="https://fastly.picsum.photos/id/1054/900/600.jpg?hmac=MXt63515nerfdPkkTvDK905AIIW7bfVnlDPWKTG77B0" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </a>
+    <a href="detalhes.html?id=2">
+      <div class="carousel-item">
+        <img src="https://fastly.picsum.photos/id/431/900/600.jpg?hmac=OvM2RJjFjoZPWuE_pJQ0WpBBj1lSD09C4K7U7M7ollQ"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Maré Vermelha</h5>
+          <p>Drama | Baseado em Fatos Reais | Suspense</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-        
-    <main class="mt-4">
+    </a>
+    <a href="detalhes.html?id=3">
+      <div class="carousel-item">
+        <img src="https://fastly.picsum.photos/id/1054/900/600.jpg?hmac=MXt63515nerfdPkkTvDK905AIIW7bfVnlDPWKTG77B0"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Circuito Fatal</h5>
+          <p>Thriller | Ficção Científica | Cyberpunk</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+
+  <main class="mt-4">
 
 
-        <section class="text-center mb-4">
-            <input type="text" class="form-control d-inline-block w-50"
-                placeholder="Pesquise por título, autor, elenco...">
-            <button class="btn btn-primary"><a href="detalhes.html?id=20">Pesquisar</a></button>
-        </section>
 
-        <section id="containerCard" class="row g-4">
-            <div class="cartao col-md-4">
-                <a  href="detalhes.html?id=1">
-                <div class="card text-center border-primary">
-                    <img src="https://fastly.picsum.photos/id/1036/900/600.jpg?hmac=hMRK0WnEuRWCTpJJo_9PODmqQPF1OD6-IwjR48-C2oo" class="card-img-top" alt="Filme 1">
-                    <div class="card-body">
-                        <h3 class="card-title">Sombras do Amanhã</h3>
-                        <p class="card-text">Quando estranhas sombras começam a apagar tudo o que tocam, surge um...</p>
-                        <div class="badge bg-info text-dark">9,6/10</div>
-                    </div>
-                </div>
-            </a>
+
+    <section id="containerCard" class="row g-4">
+      <div class="cartao col-md-4">
+        <a href="detalhes.html?id=1">
+          <div class="card text-center border-primary">
+            <img src="https://fastly.picsum.photos/id/1036/900/600.jpg?hmac=hMRK0WnEuRWCTpJJo_9PODmqQPF1OD6-IwjR48-C2oo"
+              class="card-img-top" alt="Filme 1">
+            <div class="card-body">
+              <h3 class="card-title">Sombras do Amanhã</h3>
+              <p class="card-text">Quando estranhas sombras começam a apagar tudo o que tocam, surge um...</p>
+              <div class="badge bg-info text-dark">9,6/10</div>
             </div>
-            <div class="cartao col-md-4">
-                <a  href="detalhes.html?id=2">
-                <div class="card text-center border-primary">
-                    <img src="https://fastly.picsum.photos/id/431/900/600.jpg?hmac=OvM2RJjFjoZPWuE_pJQ0WpBBj1lSD09C4K7U7M7ollQ" class="card-img-top" alt="Filme 2">
-                    <div class="card-body">
-                        <h3 class="card-title">Maré Vermelha</h3>
-                        <p class="card-text">Após um naufrágio, cinco sobreviventes lutam contra o tempo...</p>
-                        <div class="badge bg-info text-dark">9,3/10</div>
-                    </div>
-                </div>
-            </a>
+          </div>
+        </a>
+      </div>
+      <div class="cartao col-md-4">
+        <a href="detalhes.html?id=2">
+          <div class="card text-center border-primary">
+            <img src="https://fastly.picsum.photos/id/431/900/600.jpg?hmac=OvM2RJjFjoZPWuE_pJQ0WpBBj1lSD09C4K7U7M7ollQ"
+              class="card-img-top" alt="Filme 2">
+            <div class="card-body">
+              <h3 class="card-title">Maré Vermelha</h3>
+              <p class="card-text">Após um naufrágio, cinco sobreviventes lutam contra o tempo...</p>
+              <div class="badge bg-info text-dark">9,3/10</div>
             </div>
-            <div class="cartao col-md-4">
-                <a  href="detalhes.html?id=3">
-                <div class="card text-center border-primary">
-                    <img src="https://fastly.picsum.photos/id/1054/900/600.jpg?hmac=MXt63515nerfdPkkTvDK905AIIW7bfVnlDPWKTG77B0" class="card-img-top" alt="Filme 3">
-                    <div class="card-body">
-                        <h3 class="card-title">Circuito Fatal</h3>
-                        <p class="card-text">Um jovem hacker desbloqueia um código perigoso...</p>
-                        <div class="badge bg-info text-dark">8,7/10</div>
-                    </div>
-                </a>
-                </div>
+          </div>
+        </a>
+      </div>
+      <div class="cartao col-md-4">
+        <a href="detalhes.html?id=3">
+          <div class="card text-center border-primary">
+            <img src="https://fastly.picsum.photos/id/1054/900/600.jpg?hmac=MXt63515nerfdPkkTvDK905AIIW7bfVnlDPWKTG77B0"
+              class="card-img-top" alt="Filme 3">
+            <div class="card-body">
+              <h3 class="card-title">Circuito Fatal</h3>
+              <p class="card-text">Um jovem hacker desbloqueia um código perigoso...</p>
+              <div class="badge bg-info text-dark">8,7/10</div>
             </div>
-    </main>
-    <button id="btnCarregar">
-        carregar mais
-    </button>
+        </a>
+      </div>
+      </div>
+  </main>
+  <button id="btnCarregar">
+    carregar mais
+  </button>
 
-    <footer class="text-center bg-dark text-white py-3 mt-4 rounded">
-        <p>2025 &copy; PUC Minas Filmes Todos os direitos reservados a Wallyson Soares Vieira,
-        Aluno da PUC do Barreiro, cursando ADS, no turno da noite, Codigo de Pessoa: 1596723</p>
-        <a href="https://github.com/FayronWDG/trabalho-1"><img src="assets/img/github.png" alt="logo github"></a>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
+  <footer class="text-center bg-dark text-white py-3 mt-4 rounded">
+    <p>2025 &copy; PUC Minas Filmes Todos os direitos reservados a Wallyson Soares Vieira,
+      Aluno da PUC do Barreiro, cursando ADS, no turno da noite, Codigo de Pessoa: 1596723</p>
+    <a href="https://github.com/FayronWDG/trabalho-1"><img src="assets/img/github.png" alt="logo github"></a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
